@@ -11,8 +11,9 @@ using namespace std; //על מנת להשתמש בcout
 
 int main() {
     Rect r;
-   
+    
     r.setLength(4);
+    
     cout << r.getLength();
 
     return 0;

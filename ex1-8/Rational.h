@@ -6,7 +6,7 @@ class Rational
 	int denominator;
 public:
 	//constructor
-	Rational(int num, int denom);
+	Rational(int num=0, int denom=1);
 	void print();
 
 

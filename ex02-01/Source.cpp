@@ -1,7 +1,6 @@
 #include<iostream>
-using std::cout;
-using std::cin;
-
+using namespace std;
 int main() {
-
+	int* numbers = new int[10];
+	V
 }

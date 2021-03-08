@@ -8,7 +8,7 @@ private:
    int size;
 public:
    Vector(int Size = 10);
-   Vector(int val, int Size=10);
+   //Vector(int val, int Size=10);
    Vector( int* vec,int Size=10);
    void print();
 };
