@@ -56,7 +56,7 @@ char& String::operator[](int index){
 	return array[index];
 }
 
-bool String::operator==(const String& str)
+bool String::operator==(const String& str) const
 {
 	return strcmp(array, str.array) == 0;
 }

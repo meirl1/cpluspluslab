@@ -64,3 +64,4 @@ istream& operator>>(istream& is, Rational& r) {
     is >> r.numerator >> tmp >> r.denominator;
     return is;
 }
+

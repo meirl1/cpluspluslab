@@ -1,8 +1,12 @@
 #include<iostream>
 #include"String.h"
-using std::cout;
+using namespace std;
 
 String func(){
+	String tmp("Hello");
+	return tmp;
+}
+String func1() {
 	return String("Hello");
 }
 void func1(int a) {
@@ -14,11 +18,15 @@ int fun() {
 	return tmp;
 }
 int main() {
-	int a = 10;
-	a = a;
-	char* st1;
-	String s1("How are you?"), s2(func()), s3(s1);
-	
+	String s1("How are you?"), s2(func()), s3(s1),s4(func());
+	s2 = s1;
+	s1 + s2 + s3;
+	s2.operator=(s1).operator=(s3);
+	s1 = s1;
+	s1.operator=(s1);
+	s1 = func();
+	func();
+	func();
 	cout << s1[2];
 	s1[2] = 'g';
 	int* p = nullptr;

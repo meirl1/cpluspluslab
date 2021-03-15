@@ -2,15 +2,14 @@
 #include "String.h"
 #include <iostream>
 using namespace std;
-int& func(const char * st) {
-	int *p = new int(6);
-	return *p;
+int& func(int &t) {
+	t = 9;
+	return t;
 }
 
 int main()
 {
-	int a = 7;
-
+	
 	char* st1 = new char[20]{ "Hello" };
 	const char st2[] = { "hkjp" };
 	// test constructor
