@@ -1,6 +1,9 @@
 #include<iostream>
+#include"Rational.h"
 using namespace std;
+
 int main() {
-	int* numbers = new int[10];
-	V
+	
+	Rational r1(3,5);
+	
 }

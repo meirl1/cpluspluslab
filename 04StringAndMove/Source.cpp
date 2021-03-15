@@ -7,22 +7,22 @@ String f()
 	String temp("good day");
 	return temp;
 }
-
-
+int fun() {
+	int a = 10;
+	return a;
+}
 int main()
 {
-	String s1 = "hello";
-	int i;
-	i = 10;
-	const int a = 0;
-	s1.print();
+
+	int a = 10;
+	a = 11;
+	String s1("yes or no");
 	String s2(s1);
 	s2.print();
 	String s3 = "how are you?";
 	String s4 = s3;
 	cout << s4.Find("are") <<  endl;
-	String s5(f());
-	s5 = s4;
+	String s5 = f();
 	s5.print();
 	system("pause");
 	return 0;

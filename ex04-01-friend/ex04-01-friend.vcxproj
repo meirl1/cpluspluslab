@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{250e0cfc-a9e7-499e-b50d-729acdbcb02b}</ProjectGuid>
-    <RootNamespace>ex0201</RootNamespace>
+    <ProjectGuid>{218944b6-2c50-4a4f-b7ed-7e7f075e0bf9}</ProjectGuid>
+    <RootNamespace>ex0401friend</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,11 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Rational.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClInclude Include="Rational.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Rational.h" />
+    <ClCompile Include="Rational.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

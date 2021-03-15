@@ -18,7 +18,6 @@ String& String::operator=(const String& s) {
 		_data = new char[_len + 1];
 		strcpy_s(_data, _len + 1, s._data);
 	}
-
 	return *this;
 }
 
@@ -34,7 +33,6 @@ String& String::operator=(String&& s) { // move assignment operator
 	_len = s._len;
 	_data = s._data;
 	s._data = nullptr;
-
 	return *this;
 }
 

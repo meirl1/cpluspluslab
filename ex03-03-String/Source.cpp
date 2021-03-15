@@ -2,13 +2,22 @@
 #include "String.h"
 #include <iostream>
 using namespace std;
+int& func(const char * st) {
+	int *p = new int(6);
+	return *p;
+}
 
 int main()
 {
+	int a = 7;
+
+	char* st1 = new char[20]{ "Hello" };
+	const char st2[] = { "hkjp" };
 	// test constructor
 	String s1("hello");
 	s1.print(); cout << endl;
-
+	s1[2] = 'g';
+	cout << s1.at(2);
 	// test copy constructor
 	String s2(s1);
 	s2.print(); cout << endl;
@@ -35,7 +44,7 @@ int main()
 
 	// test subscript opertor
 	cout << s4[2] << endl;
-
+	s4[4] = 'h';
 	// test length
 	cout << (s1 + " " + s4).length() << endl;
 

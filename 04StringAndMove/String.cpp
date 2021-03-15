@@ -10,6 +10,8 @@ String::String(const char* p)
 	_data = new char[_len+1];
 	strcpy_s(_data, _len+1, p);
 }
+String::String(const String& s) : String(s._data)
+{ cout << "cctor\n"; }
 
 String::String(String&& s)
 {

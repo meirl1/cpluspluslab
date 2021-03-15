@@ -1,9 +1,8 @@
 #include<iostream>
 #include "Rational.h"
-using std::cout;
-using std::endl;
+using namespace std;
 
-void Rational::operator *=(Rational num){
+void Rational::operator *=(Rational num) {
     setNumerator(numerator * num.getNumerator());
     setDenominator(denominator * num.getDenominator());
 }
@@ -44,5 +43,24 @@ Rational Rational::operator++(int) {
 }
 
 void Rational::print() {
-	cout << numerator << '/' << denominator;
+    cout << numerator << '/' << denominator;
+}
+
+Rational Rational::operator+(int num) {
+    return Rational(numerator + (num * denominator), denominator);
+}
+
+Rational operator+(int num, const Rational &r1) {
+    return Rational(r1.numerator + (num * r1.denominator), r1.denominator);
+}
+
+ostream& operator<<(ostream& os, const Rational& r) {
+    os << r.numerator << '/' << r.denominator;
+    return os;
+}
+
+istream& operator>>(istream& is, Rational& r) {
+    char tmp;
+    is >> r.numerator >> tmp >> r.denominator;
+    return is;
 }

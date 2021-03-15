@@ -22,7 +22,7 @@ public:
 	char& operator[](int index);
 
 	// relational operators
-	bool operator==(const String&);
+	bool operator==(const String&) const;
 
 	int length() { return len; }
 	bool empty() { return length() == 0; }

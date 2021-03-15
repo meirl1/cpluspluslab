@@ -12,7 +12,7 @@ public:
 	String(const char* p);
 	~String() { delete[] _data; }
 	// copy constructor
-	String(const String& s) : String(s._data) { cout << "cctor\n"; }
+	String(const String& s);
 	// move constructor
 	String(String&& s);
 
