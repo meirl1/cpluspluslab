@@ -32,16 +32,14 @@ void MyString::setString(const char* s)
 	else str = nullptr;
 }
 
-MyString& MyString::
-operator=(const MyString& s)
+MyString& MyString::operator=(const MyString& s)
 {
 	if (str)
 		delete[] str;
 	setString(s.getString());
 	return *this;
 }
-MyString MyString::
-operator+(const MyString& s)
+MyString MyString::operator+(const MyString& s)
 {
 	int sizeI = strlen(str);
 	int sizeII = strlen(s.getString());

@@ -1,5 +1,5 @@
 #pragma once
-
+#include<cstring>
 class String {
 public:
 	String() : _data(nullptr) {}
@@ -12,9 +12,10 @@ public:
 
 	// move constructor/assignment operator
 	String(String&& s);
-	String& operator=(String&& s);
+	const String& operator=(String&& s);
 
-	bool operator==(const String& s) const { return strcmp(_data, s._data) == 0; }
+	bool operator==(const String& s) const { 
+		return strcmp(_data, s._data) == 0; }
 	bool operator!=(const String& s) const { return strcmp(_data, s._data) != 0; }
 	bool operator<(const String& s) const { return strcmp(_data, s._data) < 0; }
 	bool operator>(const String& s) const { return strcmp(_data, s._data) > 0; }

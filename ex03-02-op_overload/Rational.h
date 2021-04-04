@@ -21,9 +21,9 @@ public:
     int getDenominator() const { return denominator; }
 
     //binary operations
-    void operator*=(Rational);
+    void operator*=(const Rational&);
     Rational operator*(Rational);
-    Rational operator+(const Rational&);
+    Rational operator+(const Rational&) const;
     Rational operator-(Rational);
     Rational operator/(Rational);
     bool operator==(const Rational&) const;

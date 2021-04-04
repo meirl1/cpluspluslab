@@ -3,7 +3,7 @@
 using std::cout;
 using std::endl;
 
-void Rational::operator *=(Rational num){
+void Rational::operator *=(const Rational& num){
     setNumerator(numerator * num.getNumerator());
     setDenominator(denominator * num.getDenominator());
 }
@@ -15,7 +15,7 @@ Rational Rational::operator *(Rational num)
     tmp.setDenominator(denominator * num.getDenominator());
     return tmp;
 }
-Rational Rational::operator +(const Rational& num)
+Rational Rational::operator+(const Rational& num) const
 {
     return Rational(numerator * num.denominator + num.numerator * denominator,
         denominator * num.denominator);

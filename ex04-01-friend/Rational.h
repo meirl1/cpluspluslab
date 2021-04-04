@@ -1,5 +1,6 @@
 #ifndef RATIONAL_H
 #define RATIOANL_H
+using namespace std;
 class Rational
 {
     int numerator;
@@ -38,8 +39,8 @@ public:
 
     friend void func(int);
     friend Rational operator+(int, const Rational&);
-    friend std::ostream& operator<<(std::ostream& os, const Rational& r);
-    friend std::istream& operator>>(std::istream& is, Rational& r);
+    friend ostream& operator<<(ostream& os, const Rational& r);
+    friend istream& operator>>(istream& is, Rational& r);
 };
 
 #endif

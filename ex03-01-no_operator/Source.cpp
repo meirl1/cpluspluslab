@@ -7,6 +7,8 @@ int main() {
 	int a = 10, b = 20;
 	cout << a + b;
 	Rational num1(1, 2), num2(3, 6),num3(3,4);
+
+	cout<<num1 + num2;
 	cout << num1.equal(num3)<<endl;
 	num1.print(); cout << " + "; num2.print(); cout << " = "; num1.addition(num2).print(); cout << endl;
 

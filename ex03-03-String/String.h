@@ -15,7 +15,7 @@ public:
 	String& operator=(const String&);
 
 	// concatenation operator
-	String operator+(const String&);
+	String operator+(const String&) const;
 
 	// subscript operator
 	char& at(int index);

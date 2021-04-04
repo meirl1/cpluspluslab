@@ -31,7 +31,7 @@ String& String::operator=(const String& str)
 	return *this;
 }
 
-String String::operator+(const String& str)
+String String::operator+(const String& str) const
 {
 	int length = strlen(array) + strlen(str.array) + 1;
 	char* p = new char[length];

@@ -27,7 +27,7 @@ String::String(String&& s) {
 	s._data = nullptr;
 }
 
-String& String::operator=(String&& s) { // move assignment operator
+const String& String::operator=(String&& s) { // move assignment operator
 	delete[] _data;
 
 	_len = s._len;
@@ -64,7 +64,7 @@ ostream& operator<<(ostream& out, const String& s) {
 	cout << s._data;
 	return out;
 }
-
+/*
 int main()
 {
 	String s1 = "hello";
@@ -85,4 +85,4 @@ int main()
 
 	system("pause");
 	return 0;
-}
+}*/
