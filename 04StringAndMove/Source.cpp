@@ -13,7 +13,6 @@ int fun() {
 }
 int main()
 {
-
 	int a = 10;
 	a = 11;
 	String s1("yes or no");
@@ -22,7 +21,8 @@ int main()
 	String s3 = "how are you?";
 	String s4 = s3;
 	cout << s4.Find("are") <<  endl;
-	String s5 = f();
+	String s5(f());
+	String s6(String("Why?"));
 	s5.print();
 	system("pause");
 	return 0;

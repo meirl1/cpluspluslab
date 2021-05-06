@@ -25,7 +25,7 @@ public:
     void operator*=(Rational);
     Rational operator*(Rational);
     Rational operator+(const Rational&);
-    Rational operator+(int);
+    Rational operator+(int) const;
     Rational operator-(Rational);
     Rational operator/(Rational);
     bool operator==(const Rational&) const;

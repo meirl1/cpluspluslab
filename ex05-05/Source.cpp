@@ -1,5 +1,6 @@
 #include<iostream>
 #include <string>
+#include<cstring>
 using namespace std;
 
 int level3()
@@ -41,12 +42,20 @@ void level1()
 	}
 	cout << "\nLevel 1 ending." << endl;
 }
+
+int func(char *p){return strlen(p);}
+//int func(const char *p){return strlen(p);}
+#include<iomanip>
 int main()
 {
+	
+	cout<<setw(10)<<setfill('0')<<3<<endl;
+	/*char t[] = "Hello";
+	func(t);
 	cout << "Program beginning.\n";
 	level1();
 	cout << "Program ending." << endl;
-	system("pause");
+	system("pause");*/
 	return 0;
 }
 /*_____________________________

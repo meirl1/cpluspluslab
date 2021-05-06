@@ -46,12 +46,13 @@ void Rational::print() {
     cout << numerator << '/' << denominator;
 }
 
-Rational Rational::operator+(int num) {
+Rational Rational::operator+(int num) const {
     return Rational(numerator + (num * denominator), denominator);
 }
 
 Rational operator+(int num, const Rational &r1) {
     return Rational(r1.numerator + (num * r1.denominator), r1.denominator);
+    //return r1 + num;
 }
 
 ostream& operator<<(ostream& os, const Rational& r) {

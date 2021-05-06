@@ -1,18 +1,20 @@
 #include <iostream>
 #include <string>
+#include<iomanip>
 using namespace std;
 
-
 //using the string functions
-void main()
+int main()
 {
+    cout<<setw(4)<<setfill('0')<<5<<endl;
+
     string present = "it is raining";
     string past = present;
     past.replace(3, 5, "was");
     //from place 3 (start from 0),
-    // take 5 places and replace with "was"  à "it wasining"
+    // take 5 places and replace with "was"  ï¿½ "it wasining"
     cout << past << endl;
-
+    
     string word = "happy.";
     word.replace(5, 3, "!!!"); //happy!!!
     cout << word << endl;
@@ -24,7 +26,7 @@ void main()
     //return sub string of americanFormat, from 0 take space chars
     cout << "month:" << month << endl;
     int psik = americanFormat.find(",");
-    string day = americanFormat.substr(space, psik - space);
+    string day = americanFormat.substr(space, psik - space);// 18
     cout << "day:" << day << endl;
     string year =
         americanFormat.substr(psik + 1, americanFormat.length() - (psik + 1));
@@ -37,6 +39,7 @@ void main()
     if (check)
         universalFormat = day + " " + month + year;
     cout << "universalFormat:" << universalFormat << endl;
+    return 0;
 }
 
 /*

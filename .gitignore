@@ -340,3 +340,5 @@ ASALocalRun/
 healthchecksdb
 *.exe
 *.json
+Test/main.cpp
+Ex07/PointerToFuncFile.zip

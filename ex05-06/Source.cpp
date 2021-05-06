@@ -36,5 +36,8 @@ int main()
 		}
 	}
 	for (int i = 0; i < 3; i++)    cout << store[i];
+
+	cout<<store[0]<<store[1];
+	operator<<(operator<<(cout,store[0]),store[1]);
 	return 0;
 }
